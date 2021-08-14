@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/not4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Settings"
+        android:textColor="@color/Blue"
+        android:textSize="31dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Tap profile to update"
+        android:textColor="@color/Blue"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_settings"
+        android:layout_width="120dp"
+       android:layout_height="120dp"
+        android:layout_below="@id/not4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/avatar" />
+<TextView
+    android:id="@+id/logname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/profile_image_settings"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="0dp"
+    android:fontFamily="@font/commont_fnt"
+    android:textColor="@color/Blue"
+    android:textSize="20dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Logoutsettings"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"
+    android:fontFamily="@font/commont_fnt"
+    android:text="App ver:0.1"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Termsandcondition"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/logname"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/grey"
+        android:drawableLeft="@drawable/tandc"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawablePadding="25dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Terms &amp; Condition"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/Blue"
+        android:textSize="14dp"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/Termsandcondition"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/grey"
+        android:drawableLeft="@drawable/about"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"        android:drawablePadding="25dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="About"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/Blue"
+        android:textSize="14dp"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Logoutsettings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/about"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/grey"
+        android:drawableLeft="@drawable/logout"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawablePadding="25dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Logout"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/Blue"
+        android:textSize="14dp"
+
+        />
+</RelativeLayout>

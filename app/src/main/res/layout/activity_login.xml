@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="550dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/hicetbanner" />
+
+    <TextView
+        android:id="@+id/not1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text=" Login "
+        android:textColor="@color/Blue"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not1"
+        android:layout_marginStart="14dp"
+        android:id="@+id/not2"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        app:boxStrokeColor="@color/Blue"
+        app:boxStrokeErrorColor="@color/Blue"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:hint="E-mail"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress"
+
+            android:textColor="@color/Blue"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not2"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/not3"
+        android:layout_marginEnd="14dp"
+        app:boxStrokeColor="@color/Blue"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:hint="Password"
+            android:textSize="14dp"
+            android:inputType="textPassword"
+            android:textColor="@color/Blue"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgetpassword_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not3"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Forget Password ?  "
+        android:textColor="@color/Blue"
+        android:textStyle="italic" />
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_login"
+        android:text="   Save Login ?"
+        android:buttonTint="@color/yellow"
+        android:fontFamily="@font/commont_fnt"
+        android:textStyle="italic"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="22dp"
+        android:textColor="@color/greys"
+        tools:ignore="NotSibling" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Login"
+        android:textColor="@color/Blue"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/procgress_circular"
+    android:visibility="invisible"
+    android:indeterminateTint="@color/yellow"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="462dp"
+
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:id="@+id/not4"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/commont_fnt"
+            android:text="Don't have an account?  "
+            android:textStyle="italic" />
+    <TextView
+        android:id="@+id/loginpage_signuplink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:fontFamily="@font/commont_fnt"
+        android:text=" SignUp "
+        android:autoLink="none"
+        android:onClick="link_methods"
+        android:textColorLink="@color/Blue"
+        android:layout_toRightOf="@id/not4"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="140dp"
+        android:textColor="@color/Blue"
+        android:textStyle="italic" />
+
+
+
+</RelativeLayout>

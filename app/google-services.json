@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "640776021919",
+    "project_id": "hicet-it",
+    "storage_bucket": "hicet-it.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640776021919:android:c349b9140827e5edc23faa",
+        "android_client_info": {
+          "package_name": "com.renotech.app.hicetit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640776021919-pk1l139dkiqb50n2ia87fvul76sigo6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.renotech.app.hicetit",
+            "certificate_hash": "8adcc3e7f20f33df3781d256184aed71658ec407"
+          }
+        },
+        {
+          "client_id": "640776021919-c7hl8bjj7mibh8le9uua9tdh7ps9u51q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1e2SlpbYjP7Uzb-rZlkkrQLHedHboBhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640776021919-c7hl8bjj7mibh8le9uua9tdh7ps9u51q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

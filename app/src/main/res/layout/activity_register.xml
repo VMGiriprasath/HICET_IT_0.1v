@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="550dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/hicetbanner" />
+
+    <TextView
+        android:id="@+id/not1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text=" Register "
+        android:textColor="@color/Blue"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/not2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not1"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/not1"
+            app:boxStrokeColor="@color/Blue"
+            app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Firstname_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/commont_fnt"
+                android:hint="Firstname"
+                android:inputType="textPersonName"
+                android:textColor="@color/Blue"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            app:boxStrokeColor="@color/Blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Lastname_reg"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/commont_fnt"
+                android:hint="Last name"
+                android:inputType="textPersonName"
+                android:textColor="@color/Blue"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/not3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not2"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/commont_fnt"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/not4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not3"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        app:boxStrokeColor="@color/Blue"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/Blue"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+<ProgressBar
+    android:id="@+id/progressbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:indeterminateTint="@color/yellow"
+    android:layout_marginTop="525dp"
+    android:backgroundTint="@color/yellow"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/not4"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/commont_fnt"
+        android:text=" Create Account "
+        android:textColor="@color/Blue"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:id="@+id/not5"
+            android:layout_marginTop="70dp"
+            android:layout_below="@id/reg_btn"
+            android:layout_marginLeft="75dp"
+            android:text="Already have an account?  "
+            android:textStyle="italic" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:id="@+id/loginlink_reg"
+             android:layout_toRightOf="@id/not5"
+             android:layout_below="@id/reg_btn"
+             android:layout_marginTop="70dp"
+             android:text=" Login"
+             android:textStyle="italic"
+             android:onClick="link_method"
+             android:fontFamily="@font/commont_fnt"
+             android:textColor="@color/Blue"
+             android:layout_height="wrap_content"/>
+
+</RelativeLayout>
