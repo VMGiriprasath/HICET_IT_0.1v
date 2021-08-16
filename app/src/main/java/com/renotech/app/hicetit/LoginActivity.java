@@ -55,7 +55,6 @@ public class LoginActivity extends AppCompatActivity {
       }
       else if (checkbox.equals("false"))
       {
-          Toast.makeText(this, "Please Sign in", Toast.LENGTH_SHORT).show();
       }
 
      //

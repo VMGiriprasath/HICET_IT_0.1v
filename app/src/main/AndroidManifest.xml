@@ -2,14 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.renotech.app.hicetit">
+    <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
+        android:name=".Wait_Untill_Fetch.FirebaseLoaddata"
         android:allowBackup="true"
         android:icon="@drawable/logoapp"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logoapp"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HICETIT">
+        android:theme="@style/Theme.HICETIT"
+        tools:ignore="MissingClass">
         <activity android:name=".ForgetPassword.ForgetPassword"></activity>
         <activity android:name=".Fragment.SettingsFragment" />
         <activity android:name=".Fragment.HomeFragment" />

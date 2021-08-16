@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HICET IT</string>
+    <string name="hyperlink"><a href="https://twitter.com/tech_queen">Follow me on Twitter</a></string>
 </resources>

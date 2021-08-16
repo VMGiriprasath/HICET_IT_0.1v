@@ -5,14 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
-
     <ImageView
         android:id="@+id/banner"
         android:layout_width="550dp"
         android:layout_height="99dp"
         android:layout_marginTop="18dp"
         android:src="@drawable/hicetbanner" />
-
     <TextView
         android:id="@+id/not1"
         android:layout_width="wrap_content"
@@ -47,11 +45,9 @@
             android:hint="E-mail"
             android:textSize="14dp"
             android:inputType="textEmailAddress"
-
             android:textColor="@color/Blue"
             android:textStyle="italic" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
@@ -76,7 +72,6 @@
             android:textColor="@color/Blue"
             android:textStyle="italic" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <TextView
         android:id="@+id/forgetpassword_link"
         android:layout_width="wrap_content"
@@ -91,15 +86,14 @@
         android:textStyle="italic" />
     <CheckBox
         android:id="@+id/checkbox"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password_login"
-        android:text="   Save Login ?"
+        android:text="   Save Login ? "
         android:buttonTint="@color/yellow"
+        android:layout_marginStart="14dp"
         android:fontFamily="@font/commont_fnt"
         android:textStyle="italic"
         android:layout_marginTop="400dp"
-        android:layout_marginLeft="22dp"
         android:textColor="@color/greys"
         tools:ignore="NotSibling" />
     <com.google.android.material.button.MaterialButton
@@ -110,7 +104,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="14dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/commont_fnt"
@@ -125,35 +119,29 @@
     android:visibility="invisible"
     android:indeterminateTint="@color/yellow"
     android:layout_centerHorizontal="true"
-    android:layout_marginTop="462dp"
-
-    />
+    android:layout_marginTop="472dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="175dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/login_btn"
-            android:id="@+id/not4"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="140dp"
+            android:id="@+id/not9"
             android:fontFamily="@font/commont_fnt"
             android:text="Don't have an account?  "
             android:textStyle="italic" />
-    <TextView
-        android:id="@+id/loginpage_signuplink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:linksClickable="true"
-        android:fontFamily="@font/commont_fnt"
-        android:text=" SignUp "
-        android:autoLink="none"
-        android:onClick="link_methods"
-        android:textColorLink="@color/Blue"
-        android:layout_toRightOf="@id/not4"
-        android:layout_below="@id/login_btn"
-        android:layout_marginTop="140dp"
-        android:textColor="@color/Blue"
-        android:textStyle="italic" />
-
-
-
+        <TextView
+            android:id="@+id/loginpage_signuplink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:text=" SignUp "
+            android:onClick="link_methods"
+            android:textColorLink="@color/Blue"
+            android:textColor="@color/Blue"
+            android:textStyle="italic" />
+    </LinearLayout>
 </RelativeLayout>

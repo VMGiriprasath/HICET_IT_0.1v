@@ -19,11 +19,6 @@ public class Student implements Serializable {
         this.Email = Email;
         this.Password = Password;
     }
-
-    public Student(TextInputEditText Firstname, TextInputEditText lastname, TextInputEditText email, TextInputEditText passwords) {
-    }
-
-
     public String getFirstname() {
         return Firstname;
     }
