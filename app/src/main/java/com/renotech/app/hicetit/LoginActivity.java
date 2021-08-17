@@ -44,7 +44,25 @@ public class LoginActivity extends AppCompatActivity {
           firebaseAuth = FirebaseAuth.getInstance();
         //find viewby id
      setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
+     ConnectivityManager connectivityManager=(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+     NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
+     if (networkInfo==null||!networkInfo.isConnected()||!networkInfo.isAvailable())
+     {
+         Dialog dialog=new Dialog(this);
+         dialog.setContentView(R.layout.alart_dialogue);
+         dialog.setCancelable(false);
+         dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.MATCH_PARENT);
+         dialog.getWindow().getAttributes().windowAnimations= android.R.style.Animation_Dialog;
+         MaterialButton materialButton;
+         materialButton = dialog.findViewById(R.id.notinternet_connection_btn);
+         materialButton.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 recreate();
+             }
+         });
+         dialog.show();
+     }
      link=findViewById(R.id.loginpage_signuplink);
         email=findViewById(R.id.email_login);
         password=findViewById(R.id.password_login);
@@ -53,24 +71,7 @@ public class LoginActivity extends AppCompatActivity {
         loginbtn=findViewById(R.id.login_btn);
         remember=findViewById(R.id.checkbox);
         //Contivitity manager
-     ConnectivityManager connectivityManager=(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-     NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
-     if (networkInfo==null||!networkInfo.isConnected()||!networkInfo.isAvailable())
-     {
-         Dialog dialog=new Dialog(this);
-         dialog.setContentView(R.layout.alert_dialgue);
-         dialog.setCancelable(false);
-         dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.MATCH_PARENT);
-         dialog.getWindow().getAttributes().windowAnimations= android.R.style.Animation_Dialog;
-         MaterialButton materialButton=(MaterialButton)dialog.findViewById(R.id.notinternet_connection_btn);
-         materialButton.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 recreate();
-             }
-         });
-        dialog.show();
-     }
+
      //End od internet connectivity
       SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
       String checkbox=preferences.getString("remember","");

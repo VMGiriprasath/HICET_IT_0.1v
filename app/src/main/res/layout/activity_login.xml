@@ -104,7 +104,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="14dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/commont_fnt"

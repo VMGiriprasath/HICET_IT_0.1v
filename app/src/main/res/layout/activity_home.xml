@@ -11,36 +11,34 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="35dp"
             android:src="@drawable/avatar" />
-     <LinearLayout
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:id="@+id/not7"
-         android:layout_below="@id/profile_image_home"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="10dp"
-         >
-         <TextView
-             android:id="@+id/greetings"
-             android:layout_width="wrap_content"
-             android:text="Loading..."
-             android:layout_height="wrap_content"
-             android:fontFamily="@font/commont_fnt"
-             android:textColor="@color/Blue"
-             android:textSize="19dp" />
 
-         <TextView
-             android:id="@+id/loginname"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:fontFamily="@font/commont_fnt"
-             android:textColor="@color/Blue"
-             android:textSize="19dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp">
 
-     </LinearLayout>
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:textColor="@color/Blue"
+            android:text="Loading..."
+            android:textSize="19dp" />
 
+        <TextView
+            android:id="@+id/loginname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/commont_fnt"
+            android:textColor="@color/Blue"
+            android:textSize="19dp" />
 
+    </LinearLayout>
 
 
     </RelativeLayout>
