@@ -1,9 +1,16 @@
 package com.renotech.app.hicetit;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,8 +41,29 @@ public class RegisterActivity extends AppCompatActivity {
         lastname = findViewById(R.id.Lastname_reg);
         progressBars=findViewById(R.id.progressbar);
         email = findViewById(R.id.email_reg);
-        passwords = findViewById(R.id.password_reg);
         createaccountbutton = findViewById(R.id.reg_btn);
+        passwords = findViewById(R.id.password_reg);
+      //Oreientation
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //check internet on activity start
+        ConnectivityManager connectivityManager=(ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
+        if (networkInfo==null||!networkInfo.isConnected()||!networkInfo.isAvailable())
+        {
+            Dialog dialog=new Dialog(this);
+            dialog.setContentView(R.layout.alert_dialgue);
+            dialog.setCancelable(false);
+            dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.MATCH_PARENT);
+            dialog.getWindow().getAttributes().windowAnimations= android.R.style.Animation_Dialog;
+            MaterialButton materialButton=(MaterialButton)dialog.findViewById(R.id.notinternet_connection_btn);
+            materialButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    recreate();
+                }
+            });
+            dialog.show();
+        }
         //Firebase auth
         FirebaseAuth fbase = FirebaseAuth.getInstance();
         //Firebase Database

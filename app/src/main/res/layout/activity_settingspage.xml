@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
+        android:id="@+id/tvupdate"
         android:fontFamily="@font/commont_fnt"
         android:text="Tap profile to update"
         android:textColor="@color/Blue"/>
@@ -31,39 +32,61 @@
         android:layout_width="120dp"
        android:layout_height="120dp"
         android:layout_below="@id/not4"
+        android:src="@drawable/avatar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:src="@drawable/avatar" />
-<TextView
-    android:id="@+id/logname"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/profile_image_settings"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="0dp"
-    android:fontFamily="@font/commont_fnt"
-    android:textColor="@color/Blue"
-    android:textSize="20dp"
-    />
+         />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_save"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_image_settings"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/commont_fnt"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/Blue"
+        android:text="Save"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/update_save"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/grey"
+        android:drawableLeft="@drawable/profle_icon"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:drawablePadding="50dp"
+        android:fontFamily="@font/commont_fnt"
+        android:text="Edit Profile"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/Blue"
+        android:textSize="14dp"/>
+
+
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_below="@id/Logoutsettings"
     android:layout_centerHorizontal="true"
-    android:layout_marginTop="100dp"
+    android:layout_marginTop="60dp"
     android:fontFamily="@font/commont_fnt"
     android:text="App ver:0.1"/>
     <com.google.android.material.button.MaterialButton
         android:id="@+id/Termsandcondition"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@id/logname"
+        android:layout_below="@id/Edit_profile"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@color/grey"
-        android:drawableLeft="@drawable/tandc"
+        android:drawableLeft="@drawable/t_c_icon"
         android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
         android:drawablePadding="25dp"
         android:fontFamily="@font/commont_fnt"
