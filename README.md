@@ -1,7 +1,7 @@
 # HICET_IT_0.1v
 # Splash Activity
 ###### It is a constant screen which appears for a specific amount of time, generally shows for the first time when the app is launched. The Splash screen is used to display some basic introductory information such as the company logo, content, etc just before the app loads completely
-![Screenshot_2021-08-21-13-05-52-08_c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315328-f572c24b-a0ee-4544-81ce-ff2e5f6518e6.jpg)
+![resize-1629533464976191684Screenshot2021082113055208c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315450-6576c18d-a9cf-404f-a673-7bb1d59082d1.jpg)
 
 # Android Login and Register Activity
    ## Login Acitivty
