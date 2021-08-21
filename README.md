@@ -1,5 +1,8 @@
 # HICET_IT_0.1v
-__Android Login and Register Activity__    
+#Android Login and Register Activity
+   ##Login Acitivty
+      ######Login Acitivty
+
      
     
        .
