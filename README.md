@@ -1,3 +1,4 @@
+![resize-162953358079632548Screenshot2021082113063625c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315474-98e90f17-9810-433f-b7d9-8d7b51489659.jpg)
 # HICET_IT_0.1v
 # Splash Activity
 ###### It is a constant screen which appears for a specific amount of time, generally shows for the first time when the app is launched. The Splash screen is used to display some basic introductory information such as the company logo, content, etc just before the app loads completely
@@ -5,17 +6,16 @@
 
 # Android Login and Register Activity
    ## Login Acitivty
-   
    ###### Allows to user to login to thier account. It has a link to reset the password It also has link to Register Activity incase of new user.
-    ![Screenshot_2021-08-21-13-06-36-25_c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315124-40ec1987-e23f-490d-a56c-06cb259e3e19.jpg)
+ ![resize-162953358079632548Screenshot2021082113063625c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315497-f7163ebe-3c2b-45c3-ad66-6fb0220a659f.jpg) 
    
    ## Register Activity
    ######  Allows users to register an account using thier email id and password. It also contains a link to go back to Login Activity
-   ![Screenshot_2021-08-21-13-06-56-26_c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315190-39d31394-7a98-49db-876a-95c454838db8.jpg)
+![resize-1629533683536542587Screenshot2021082113065626c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315534-4e7e4393-6299-485c-a9dc-11c5faf8fdde.jpg)
 
    ## Forget Password Activity
    ######  Reset password is the action of invalidating the current password for an account on a App, and then creating a new one. ... If you need your  password reset,I                      Application we have a "forgot password" service that e-mails you a link when you request to reset the password on the website.
-   ![Screenshot_2021-08-21-13-06-43-63_c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315275-a5e61fce-f1f1-49ef-8623-e54bac96c59d.jpg)
+![resize-1629533706307570826Screenshot2021082113064363c10f5d10427286d1218d0ac9f81ba8a9](https://user-images.githubusercontent.com/79587312/130315537-6c008197-56f7-4c00-ba6f-17bc71256c11.jpg)
 
    
 
